@@ -2,6 +2,7 @@ import React from 'react';
 import Browse from './Browse';
 import Login from './Login';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import MovieCardDesc from './MovieCardDesc';
 
 
 const Body = () => {
@@ -14,6 +15,11 @@ const Body = () => {
       path: "/browse",
       element: <Browse/>,
     },
+    {
+      path: "/movieCardDesc",
+      element: <MovieCardDesc/>,
+    },
+    
   ]);
 
    return (
